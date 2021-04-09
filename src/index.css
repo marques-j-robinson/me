@@ -1,8 +1,14 @@
+/* Google Fonts
+--------------------------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Manrope);
+
+/* Global
+--------------------------------------------------------------------------------*/
+
 body {
+  background-color: #F5F5F5; 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Manrope';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +17,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Bootstrap Navbar Custom
+--------------------------------------------------------------------------------*/
+.navbar {
+    padding: 0;
+    margin-bottom: 15px;
+    border-left: 1px solid #8a3324;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.nav-link:hover {
+    background-color: #cac6be;
+}
+
+.active {
+    color: #8a3324 !important;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        border-left: none;
+				background-color: #F5F5F5 !important;
+    }
+
+    .navbar-toggler {
+        margin-top: 15px;
+    }
+    
+    .navbar-collapse {
+        position: absolute;
+        top: 54px;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-right: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    
+    .navbar-collapse.show {
+        right: 0;
+        background-color: #FFFFFF;
+        z-index: 100;
+    }
+}
+
+/* Social Media Icon Colors
+--------------------------------------------------------------------------------*/
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-spotify {
+    color: #1ED760;
+}
+
+.fa-itunes {
+    color:rgba(0,0,255,0.3);
+}
+
+.fa-linkedin {
+    color: #0a66c2;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-medium {
+    color: #02b875;
+}
+
+/* End
+--------------------------------------------------------------------------------*/
